@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   users = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
-  activated = false;
+  activated: boolean = false;
+  name: string = 'Ryan Ray';
 }
