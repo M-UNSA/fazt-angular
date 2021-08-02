@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { UserComponent } from './user/user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserComponent } from './user/user.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

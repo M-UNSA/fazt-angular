@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  name: string = 'John Carter';
+  age: number = 28;
+
   users: string[] = ['ryan', 'joe', 'cameron'];
 
   sayHello(){
@@ -18,5 +21,12 @@ export class AppComponent {
         this.users.splice(i,1);
       }
     }
+  }
+
+  addUser(newUser: any) {
+    this.users.push(newUser.value);
+    newUser.value = '';
+    newUser.focus();
+    return false;
   }
 }
