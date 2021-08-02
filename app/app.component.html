@@ -1,10 +1,5 @@
-<div>
-  <p>Name: {{ name }}</p>
-  <p>Street: {{ address.street }} </p>
-  <p>Cityt: {{ address.city }}</p>
-  <ul>
-    <li *ngFor = "let hobby of hobbies">
-        {{ hobby }}
-    </li>
-  </ul>
-</div>
+<ul>
+  <li *ngFor='let user of users'>
+    {{user}} <button (click) = "sayHello()">Hello!</button>
+  </li>
+</ul>
