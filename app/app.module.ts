@@ -8,6 +8,9 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
 
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +20,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
